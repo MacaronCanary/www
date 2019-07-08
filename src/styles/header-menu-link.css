@@ -1,0 +1,17 @@
+li {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.text {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    vertical-align: top;
+    margin-left: 2em;
+}
