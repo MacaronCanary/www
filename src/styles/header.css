@@ -1,16 +1,18 @@
 header {
     width: 100%;
     height: 10vh;
-    background-color: #A9B7CB;
+    background-color: #F3F6FB;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     padding: 1em;
     clear: both;
+    border-bottom: solid 1px #A9B7CB;
+    position: relative;
 }
-.logo {
-    display: block;
+.header-hamburger {
+    order: 0;
 }
-ul, li {
-    margin: 0;
+.header-logo {
+    order: 1;
 }

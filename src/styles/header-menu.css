@@ -1,0 +1,26 @@
+.menu-bar {
+    width: 100vw;
+    padding: 1em;
+    background-color: #e0e8f5;
+    position: absolute;
+    z-index: 3;
+    display: block;
+    top: 100%;
+    border-bottom: solid 1px #A9B7CB;
+    border-top: solid 1px #A9B7CB;
+    margin-left: -1em;
+    right: 0;
+}
+.menu-container {
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}

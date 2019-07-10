@@ -1,0 +1,24 @@
+.mchome {
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.mclink {
+    color: #40403D;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    order: 0;
+    line-height: 28px;
+    font-size: 32px;
+}
+.mclink:link, .mclink:visited, .mclink:focus, .mclink:hover, .mclink:active {
+    color: #40403D;
+    background: transparent;
+    border-bottom: none;
+}
+.mclogo { 
+    order: 1;
+    padding-left: 1em;
+}

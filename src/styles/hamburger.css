@@ -1,0 +1,9 @@
+.hamburger-button {
+    padding: .5em .6em .5em .5em;
+    font-size: 1em;
+    border: solid 1px #535350;
+    border-radius: 5px;
+    background: #fafbfd;
+    display: flex;
+    align-items: center;
+}

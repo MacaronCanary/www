@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #191918;
+    line-height: 1.15;
+    font-weight: 700;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.25em;
+}
+h3 {
+    font-size: 1.75em;
+}
+h4 {
+    font-size: 1.125em;
+}
+p, a, li {
+    font-size: 20px;
+    line-height: 1.375em;
+}
+p, li {
+    color: #0c0c0c;
+}
+blockquote {
+    font-size: 1.5em;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+a:link {
+    color: #4886b4;
+}
+a:visited {
+    color: #4886b4
+}
+a:focus, a:hover, a:active {
+    border-bottom: 3px solid #a7cae4;
+}

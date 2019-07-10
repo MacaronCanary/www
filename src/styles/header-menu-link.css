@@ -1,17 +1,34 @@
-li {
-    color: white;
+.menu-menu-links {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    text-align: center;
+    width: 100px;
+}
+.menu-icon {
+    order: 0;
+}
+.menu-text {
+    order: 1;
     text-decoration: none;
     text-transform: uppercase;
-    display: inline;
-}
-
-.text {
-    color: white;
-    text-decoration: none;
     font-size: 12px;
-    text-align: center;
-    height: 70px;
-    width: 70px;
-    vertical-align: top;
-    margin-left: 2em;
+}
+.menu-icon, .menu-text, .menu-icon:link, .menu-icon:visited,
+.menu-icon:focus,
+.menu-icon:active,
+.menu-icon:hover,
+.menu-text:link,
+.menu-text:visited,
+.menu-text:focus,
+.menu-text:active,
+.menu-text:hover{
+    display: block;
+    outline: none;
+    border-bottom: none;
+    color: #40403D;
 }

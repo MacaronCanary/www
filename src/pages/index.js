@@ -1,8 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../styles/pages/index/index.css"
 
 const IndexPage = () => (
     <StaticQuery
@@ -51,43 +52,63 @@ const IndexPage = () => (
                     }
                     }
                 }
+                unevenmacaron:file(relativePath:{eq:"vectors/uneven-macaron.png"}) {
+                    childImageSharp {
+                    fluid(maxWidth: 400) {
+                        ...GatsbyImageSharpFluid
+                    }
+                    }
+                }
             }
             `
         }
         render={(data)=>(
             <Layout>
                 <SEO title="Home" keywords={[`macaron canary`, `warrant canaries`]} />
-                <h1>Macaron</h1>
-                <h1>Canary</h1>
-                <h2>I would like to:</h2>
+                <h1 className="index-h1 h1-1">Macaron</h1>
                 <Img
-                    fluid={
-                        data.bluetop.childImageSharp.fluid
-                    }
-                    alt=""
+                        fluid={ data.unevenmacaron.childImageSharp.fluid }
+                        className="uneven-macaron"
+                        alt="Uneven Macaron Logo"
                 />
-                <h3>Make Macarons</h3>
-                <p>Create examples of warrant canaries of your own choice!</p>
-                <Img
-                    fluid={
-                        data.bluebottom.childImageSharp.fluid
-                    }
-                    alt=""
-                />
-                <Img
-                    fluid={
-                        data.yellowtop.childImageSharp.fluid
-                    }
-                    alt=""
-                />
-                <h3>See Macarons</h3>
-                <p>View existing macarons!</p>
-                <Img
-                    fluid={
-                        data.yellowbottom.childImageSharp.fluid
-                    }
-                    alt=""
-                />
+                <h1 className="index-h1 h1-2">Canary</h1>
+                <h2 className="index-h2">I would like to:</h2>
+                <nav className="index-macaron">
+                    <Img
+                        fluid={ data.bluetop.childImageSharp.fluid }
+                        className="index-top"
+                        alt="Top Shell of a Blue Macaron"
+                    />
+                    <Link to="/macarons-bake/" className="index-macarons-link">
+                        <section className="index-filling">
+                            <h3 className="index-h3">Make Macarons</h3>
+                            <p className="index-p">Create examples of warrant canaries of your own choice!</p>
+                        </section>
+                    </Link>
+                    <Img
+                        fluid={ data.bluebottom.childImageSharp.fluid }
+                        className="index-bottom"
+                        alt="Bottom Shell of a Blue Macaron"
+                    />
+                </nav>
+                <nav className="index-macaron">
+                    <Img
+                        fluid={ data.yellowtop.childImageSharp.fluid }
+                        className="index-top"
+                        alt="Top Shell of a Yellow Macaron"
+                    />
+                    <Link to="/macarons/" className="index-macarons-link">
+                        <section className="index-filling">
+                            <h3 className="index-h3">See Macarons</h3>
+                            <p className="index-p">View existing macarons!</p>
+                        </section>
+                    </Link>
+                    <Img
+                        fluid={ data.yellowbottom.childImageSharp.fluid }
+                        className="index-bottom"
+                        alt="Bottom Shell of a Yellow Macaron"
+                    />
+                </nav>
             </Layout>
         )}
     />

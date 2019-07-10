@@ -1,11 +1,12 @@
 footer {
     width: 100vw;
-    height: 13vh;
-    background-color: #A9B7CB;
+    background-color: #F3F6FB;
     padding: 1em;
+    border-top: solid 1px #A9B7CB;
 }
-p, h3 {
+footer p, footer h3 {
     max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1em;
 }
